@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/main.css" />
+    <title>Cotact</title>
+  <link rel="stylesheet" href="contact_style.css">
+  <link rel="stylesheet" href="assets/css/font-awesome.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <style>
+    body {
+  background-image: url('vectorpaint (3).svg');
+  background-repeat: no-repeat;
+  background-size: 800px;
+  background-position: 90% -25%;
+}
+    * {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 100%;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+  </style>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="relative container mx-auto p-6">
+      <!-- Flex container -->
+      <div class="flex items-center justify-between">
+        <!-- Logo -->
+        <div class="pt-2">
+          <img src="ese.png" style="width:160px; height:60px" alt="" />
+        </div>
+        <!-- Menu Items -->
+        <div class="hidden space-x-6 md:flex">
+          <a href="index.html" class="hover:text-darkGrayishBlue">HOME</a>
+          <a href="about.html" class="hover:text-darkGrayishBlue">ABOUT US</a>
+          <a href="reach.html" class="hover:text-darkGrayishBlue">REACH OUT</a>
+          <a href="awareness.html" class="hover:text-darkGrayishBlue">AWARENESS</a>
+          <a href="contact1.html" class="hover:text-darkGrayishBlue">CONTACT</a>
+          <a href="ppts.html" class="hover:text-darkGrayishBlue">IPR</a>
+        </div>
+        <!-- Button -->
+        <a
+          href="https://console.dialogflow.com/api-client/demo/embedded/133f9ed3-0887-4f41-91b4-c3950521a1fa?fbclid=IwAR1cPCwi8UBbEhYpxAmZ2QenHxs-J46wF2hKYOxKyGDug_HFYCwIdMF1lf0" target="_blank"
+          class="hidden p-3 px-6 pt-2 text-white bg-brightRed rounded-full baseline hover:bg-brightRedLight md:block"
+          >Get Started</a
+        >
+
+        <!-- Hamburger Icon -->
+        <button
+          id="menu-btn"
+          class="block hamburger md:hidden focus:outline-none"
+        >
+          <span class="hamburger-top"></span>
+          <span class="hamburger-middle"></span>
+          <span class="hamburger-bottom"></span>
+        </button>
+      </div>
+
+      <!-- Mobile Menu -->
+      <div class="md:hidden">
+        <div
+          id="menu"
+          class="absolute flex-col items-center hidden self-end py-8 mt-10 space-y-6 font-bold bg-white sm:w-auto sm:self-center left-6 right-6 drop-shadow-md"
+        >
+        <a href="index.html" class="hover:text-darkGrayishBlue">HOME</a>
+        <a href="about.html" class="hover:text-darkGrayishBlue">ABOUT US</a>
+        <a href="reach.html" class="hover:text-darkGrayishBlue">REACH OUT</a>
+        <a href="awareness.html" class="hover:text-darkGrayishBlue">AWARENESS</a>
+        <a href="contact1.html" class="hover:text-darkGrayishBlue">CONTACT</a>
+        <a href="ppts.html" class="hover:text-darkGrayishBlue">IPR</a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <style>
+    .topnav {
+      overflow: hidden;
+      background-color: #3A53F2 ;
+    }
+    
+    .topnav a {
+      float: left;
+      color: #f2f2f2;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 17px;
+    }
+    
+    .topnav a:hover {
+      background-color: #ddd;
+      color: #3A53F2;
+    }
+    
+    .topnav a.active {
+      color:white;
+      background-color: rgb(100, 77, 223);
+    }
+    </style>
+    </head>
+    <body>
+    
+    <div class="topnav">
+      <a href="contact1.html">Madhab Contacts</a>
+      <a href="sd.html">SD CONTACT (ALL SCHOOLS)</a>
+      <a href="CPU.html">Child Protection Unit</a>
+    </div>
+    
+    <div style="padding-left:160px">
+      
+    </div>
+<!-- Slideshow container -->
+<div class="slideshow-container text-brightRed">
+
+  <style>
+    .button {
+      background-color: #4CAF50; /* Green */
+      border: none;
+      width: 500px;
+      color: white;
+      align:center;
+      padding: 16px 32px;
+     
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 10px 20px;
+      transition-duration: 0.4s;
+      cursor: pointer;
+    }
+    
+    .button1 {
+      background-color: #3A53F2; 
+      color: white; 
+      border: 2px solid #3A53F2;
+    }
+    
+    .button1:hover {
+       background-color: white;
+      color:  #3A53F2;
+    }
+    
+    .button2 {
+      background-color:  #3A53F2; 
+      color: white; 
+      border: 2px solid  #3A53F2;
+    }
+    
+    .button2:hover {
+      background-color: white;
+      color:  #3A53F2;
+    }
+    
+    .button5 {
+      background-color:  #3A53F2; 
+      color: white; 
+      border: 2px solid  #3A53F2;
+    }
+    
+    .button5:hover {
+       background-color: white;
+      color: #3A53F2;
+    }
+    
+    .button4 {
+      background-color:  #3A53F2; 
+      color: white; 
+      border: 2px solid #3A53F2;
+    }
+    
+    .button4:hover {
+      background-color: white;
+      color: #008CBA;
+    }
+    h2{
+      font-family: 'Dubai';
+
+    }
+    
+    .mainc{
+      margin-left: 10%;
+      
+    }
+    </style>
+    
+  <div class="mainc">
+    <h2 style="margin: 20px;" ><strong> Child Protection Unit وحدة حماية الطفل</strong></h2>
+    
+   
+    <p style="margin: 20px; text-align:right ;"><strong>اذا كنت ولي أمر أو احد العاملين في المؤسسات التعليمية أو كفرد من المجتمع
+
+        الزامية ووجوب التبليغ عن حالة الاشتباه باي نوع من أنواع  الاساءة التي يتعرض لها الطلبة سواء من البيت او في حرم المدرسة وما حوله او في مرافق المؤسسة التعليمية او حافلات النقل المدرسي او في المعسكرات والانشطة الداخلية والخارجية التي يتم تنظيمه من المؤسسة التعليمية او الوزارة وفقا للقانون والتشريعات النافذة.
+        يمكنك الإبلاغ عن أي شكل من أشكال الإساءة التي قد يتعرض لها الأطفال، من خلال الاتصال على الخط الساخن 80085 أو عبر البريد الإلكتروني cpu@moe.gov.ae 
+        <br>
+        </strong></p>
+        <p style="margin: 20px;"><strong> The Child Protection Unit is administratively affiliated to the Activities and Care Sector and reports to the Academic &Career Counselling Department .The unit aims to implement the mechanisms and measures of child protection in educational institutions as stipulated in the Federal Law No. (3) for 2016 and its executive regulations.
+        <br>
+        Source: Ministry Of Education UAE Website
+        
+        </strong>
+     </p>
+    
+    <a target="_blank" href="https://www.moe.gov.ae/ar/importantlinks/forms/pages/childprotectionunit.aspx" action="_blank"><button class="button button1">CPU Webpage صفحة وحدة حماية الطفل</button></a><br>
+    <a target="_blank" href="https://www.ese.gov.ae/Ar/Pages/Contact-us.aspx"><button class="button button2">
+        <div class="cont-right">
+            <h6>CPU Hotline الخط الساخن لوحدة حماية الطفل</h6>
+            <p><a href="#">80085</a></p>
+          </div>
+    </button></a><br>
+    <button class="button button4">
+      <div class="cont-left text-center">
+        <span class="fa fa-envelope-o text-primary"></span>
+      </div>
+      <div class="cont-right">
+        <h6>Email CPU البريد الإلكتروني لوحدة حماية الطفل</h6>
+        <p><a href="mailto:cpu@moe.gov.ae" class="mail">cpu@moe.gov.ae</a></p>
+      </div>
+    </button><br>
+    
+          
+        
+        </div>
+
+         <!-- contact1 -->
+   </div>
+  
+<!-- /contact1 
+https://www.ese.gov.ae/En/Pages/Contact-us.aspx
+-->
+
+       
+
+    
+    <!-- CTA Section -->
+    <section id="cta" class="bg-brightRed">
+      <!-- Flex Container -->
+      <div
+        class="container flex flex-col items-center justify-between px-6 py-24 mx-auto space-y-12 md:py-12 md:flex-row md:space-y-0"
+      >
+        <!-- Heading -->
+        <h2
+          class="text-5xl font-bold leading-tight text-center text-white md:text-4xl md:max-w-xl md:text-left"
+        >
+          Get assisted with our Digital Detective now 
+        </h2>
+        <!-- Button -->
+        <div>
+          <a
+            href="https://console.dialogflow.com/api-client/demo/embedded/133f9ed3-0887-4f41-91b4-c3950521a1fa?fbclid=IwAR1cPCwi8UBbEhYpxAmZ2QenHxs-J46wF2hKYOxKyGDug_HFYCwIdMF1lf0" target="_blank"
+            class="p-3 px-6 pt-2 text-brightRed bg-white rounded-full shadow-2xl baseline hover:bg-gray-900"
+            >Get Started</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-veryDarkBlue">
+      <!-- Flex Container -->
+      <div
+        class="container flex flex-col-reverse justify-between px-6 py-10 mx-auto space-y-8 md:flex-row md:space-y-0"
+      >
+        <!-- Logo and social links container -->
+        <div
+          class="flex flex-col-reverse items-center justify-between space-y-12 md:flex-col md:space-y-0 md:items-start"
+        >
+          <div class="mx-auto my-6 text-center text-white md:hidden">
+            Copyright &copy; 2022, All Rights Reserved
+          </div>
+          <!-- Logo -->
+          <div>
+            <img src="esebg.png" style="height:70px ;width: 250px;" class="h-8" alt="" />
+            <!--<img src="logo white.png" style="height:50 ;width: 2050;" class="h-8" alt="" />-->
+          </div>
+          <!-- Social Links Container -->
+          <div class="flex justify-center space-x-4">
+            <!-- Link 1 -->
+            <a href="#">
+              <img src=".." alt="" class="h-8" />
+            </a>
+            <!-- Link 2 -->
+            <a href="#">
+              <img src=".." alt="" class="h-8" />
+            </a>
+            <!-- Link 3 -->
+            <a href="#">
+              <img src="." alt="" class="h-8" />
+            </a>
+            <!-- Link 4 -->
+            <a href="#">
+              <img src=".." alt="" class="h-8" />
+            </a>
+            <!-- Link 5 -->
+            <a href="#">
+              <img src=".." alt="" class="h-8" />
+            </a>
+          </div>
+        </div>
+        <!-- List Container -->
+        <div class="flex justify-around space-x-32">
+          <div class="flex flex-col space-y-3 text-white">
+            <a href="index.html" class="hover:text-brightRed">Home</a>
+            <a href="about.html" class="hover:text-brightRed">About Us</a>
+            <a href="reach.html" class="hover:text-brightRed">Reach Out</a>
+            <a href="awareness.html" class="hover:text-brightRed">Awareness</a>
+          </div>
+          <div class="flex flex-col space-y-3 text-white">
+            <a href="contact1.html" class="hover:text-brightRed">Contact</a>
+            <a href="ppts.html" class="hover:text-brightRed">IPR</a>
+            <a href="https://console.dialogflow.com/api-client/demo/embedded/133f9ed3-0887-4f41-91b4-c3950521a1fa?fbclid=IwAR1cPCwi8UBbEhYpxAmZ2QenHxs-J46wF2hKYOxKyGDug_HFYCwIdMF1lf0" target="_blank" class="hover:text-brightRed">Digital Detective</a>
+            <a href="Digital Detective Chatbot Manual.pdf" class="hover:text-brightRed">Digital Detective Guide</a>
+          </div>
+        </div>
+
+        
+          </form>
+          <div class="hidden text-white md:block">
+            Copyright &copy; 2022, All Rights Reserved
+          </div>
+        </div>
+      </div>
+    </footer>
+    
+    <script src="js/script.js"></script>
+  </body>
+</html>
