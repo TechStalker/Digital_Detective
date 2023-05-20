@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/main.css" />
+    <title>HOME | Digital Detective</title>
+    <style>
+      body {
+  background-image: url('vectorpaint (3).svg');
+  background-repeat: no-repeat;
+  background-size: 800px;
+  background-position: 90% -25%;
+}
+    </style>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="relative container mx-auto p-6">
+      <!-- Flex container -->
+      <div class="flex items-center justify-between">
+        <!-- Logo -->
+        <div class="pt-2">
+          <img src="ese.png" style="width:160px; height:60px" alt="" />
+        </div>
+        <!-- Menu Items -->
+        <div class="hidden space-x-6 md:flex">
+          <a href="index.html" class="hover:text-darkGrayishBlue">HOME</a>
+          <a href="about.html" class="hover:text-darkGrayishBlue">ABOUT US</a>
+          <a href="reach.html" class="hover:text-darkGrayishBlue">REACH OUT</a>
+          <a href="awareness.html" class="hover:text-darkGrayishBlue">AWARENESS</a>
+          <a href="contact1.html" class="hover:text-darkGrayishBlue">CONTACT</a>
+          <a href="ppts.html" class="hover:text-darkGrayishBlue">IPR</a>
+        </div>
+        <!-- Button -->
+        <a
+          href="https://console.dialogflow.com/api-client/demo/embedded/133f9ed3-0887-4f41-91b4-c3950521a1fa?fbclid=IwAR1cPCwi8UBbEhYpxAmZ2QenHxs-J46wF2hKYOxKyGDug_HFYCwIdMF1lf0" target="_blank"
+          class="hidden p-3 px-6 pt-2 text-white bg-brightRed rounded-full baseline hover:bg-brightRedLight md:block"
+          >Get Started</a
+        >
+
+        <!-- Hamburger Icon -->
+        <button
+          id="menu-btn"
+          class="block hamburger md:hidden focus:outline-none"
+        >
+          <span class="hamburger-top"></span>
+          <span class="hamburger-middle"></span>
+          <span class="hamburger-bottom"></span>
+        </button>
+      </div>
+
+      <!-- Mobile Menu -->
+      <div class="md:hidden">
+        <div
+          id="menu"
+          class="absolute flex-col items-center hidden self-end py-8 mt-10 space-y-6 font-bold bg-white sm:w-auto sm:self-center left-6 right-6 drop-shadow-md"
+        >
+        <a href="index.html" class="hover:text-darkGrayishBlue">HOME</a>
+        <a href="about.html" class="hover:text-darkGrayishBlue">ABOUT US</a>
+        <a href="reach.html" class="hover:text-darkGrayishBlue">REACH OUT</a>
+        <a href="awareness.html" class="hover:text-darkGrayishBlue">AWARENESS</a>
+        <a href="contact1.html" class="hover:text-darkGrayishBlue">CONTACT</a>
+        <a href="ppts.html" class="hover:text-darkGrayishBlue">IPR</a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero">
+      <!-- Flex Container -->
+      <div
+        class="container flex flex-col-reverse items-center px-6 mx-auto mt-10 space-y-0 md:space-y-0 md:flex-row"
+      >
+        <!-- Left item -->
+        <div class="flex flex-col mb-32 space-y-12 md:w-1/2">
+          <h1
+            class="max-w-md text-4xl font-bold text-center md:text-6xl md:text-left"
+          >
+          Get technical and cyber advice from your virtual assistant “Digital Detective”
+          </h1>
+          <p class="max-w-sm text-center text-darkGrayishBlue md:text-left">
+            Access the chatbot , greet your advisor and type in sentence with a keyword that defines your issue . Know how to act .
+          </p>
+          <div class="flex justify-center md:justify-start">
+            <a
+              href="https://console.dialogflow.com/api-client/demo/embedded/133f9ed3-0887-4f41-91b4-c3950521a1fa?fbclid=IwAR1cPCwi8UBbEhYpxAmZ2QenHxs-J46wF2hKYOxKyGDug_HFYCwIdMF1lf0" target="_blank"
+              class="p-3 px-6 pt-2 text-white bg-brightRed rounded-full baseline hover:bg-brightRedLight"
+              >Get Started</a
+            >
+          </div>
+        </div>
+        <!-- Image -->
+        <div class="md:w-1/2">
+          <img src="enanbg.png" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features">
+      <!-- Flex container -->
+      <div
+        class="container flex flex-col px-4 mx-auto mt-10 space-y-12 md:space-y-0 md:flex-row"
+      >
+        <!-- What's Different -->
+        <div class="flex flex-col space-y-12 md:w-1/2">
+          <h2 class="max-w-md text-5xl font-bold text-center md:text-left">
+          How to use the Digital Detective website, navigate through it and access its features?
+          </h2>
+          <p class="max-w-sm text-center text-darkGrayishBlue md:text-left">
+            Here are the main features of our website , with the description of why and how to access each feature 
+        </div>
+
+        <!-- Numbered List -->
+        <div class="flex flex-col space-y-8 md:w-1/2">
+          <!-- List Item 1 -->
+          <div
+            class="flex flex-col space-y-3 md:space-y-0 md:space-x-6 md:flex-row"
+          >
+          
+            <!-- Heading -->
+            <div class="rounded-l-full bg-brightRedSupLight md:bg-transparent">
+              <div class="flex items-center space-x-2">
+                <div
+                  class="px-4 py-2 text-white rounded-full md:py-1 bg-brightRed"
+                >
+                  01
+                </div>
+                <h3 class="text-base font-bold md:mb-4 md:hidden">
+                  Digital Detective Chatbot
+                </h3>
+              </div>
+            </div>
+
+            <div>
+              <h3 class="hidden mb-4 text-lg font-bold md:block">
+                Digital Detective Chatbot
+              </h3>
+              <p class="text-darkGrayishBlue">
+                This is Madhab School’s Digital Detective Chatbot that will guide you if you have basic technical and cyber issues.
+                 It will direct you to whom should you reach and what basic actions can you take .
+                  You can access this feature by clicking on the “ Get Started” Button . 
+              </p>
+            </div>
+          </div>
+
+          <!-- List Item 2 -->
+          <div
+            class="flex flex-col space-y-3 md:space-y-0 md:space-x-6 md:flex-row"
+          >
+            <!-- Heading -->
+            <div class="rounded-l-full bg-brightRedSupLight md:bg-transparent">
+              <div class="flex items-center space-x-2">
+                <div
+                  class="px-4 py-2 text-white rounded-full md:py-1 bg-brightRed"
+                >
+                  02
+                </div>
+                <h3 class="text-base font-bold md:mb-4 md:hidden">
+                  Direct contact (Enquiry) with the school admin .
+                </h3>
+              </div>
+            </div>
+
+            <div>
+              <h3 class="hidden mb-4 text-lg font-bold md:block">
+                Direct contact (Enquiry) with the school admin .
+              </h3>
+              <p class="text-darkGrayishBlue">
+                In many cyber security situations that you might face using your school device you might need to contact and
+                 inform your school  administration or the ESE SD team . You can inform your school with any kind of technical and
+                  cyber issues that you face by completing and sending the enquiry in the CONTACT tab on the navigation bar up . 
+              </p>
+            </div>
+          </div>
+
+          <!-- List Item 3 -->
+          <div
+            class="flex flex-col space-y-3 md:space-y-0 md:space-x-6 md:flex-row"
+          >
+            <!-- Heading -->
+            <div class="rounded-l-full bg-brightRedSupLight md:bg-transparent">
+              <div class="flex items-center space-x-2">
+                <div
+                  class="px-4 py-2 text-white rounded-full md:py-1 bg-brightRed"
+                >
+                  03
+                </div>
+                <h3 class="text-base font-bold md:mb-4 md:hidden">
+                  The REACH OUT tab 
+                </h3>
+              </div>
+            </div>
+
+            <div>
+              <h3 class="hidden mb-4 text-lg font-bold md:block">
+                The REACH OUT tab 
+              </h3>
+              <p class="text-darkGrayishBlue">
+                In this tab we collected main resources and services offered by either UAE official authorities or global authorities ,
+                  you might need when facing a technical or a cyber problem . You can access it by clicking on the REACH OUT tab on the
+                   navigation bar up and then selecting the type of problem you have .
+              </p>
+            </div>
+          </div>
+          
+          <!-- List Item 4 -->
+          <div
+            class="flex flex-col space-y-3 md:space-y-0 md:space-x-6 md:flex-row"
+          >
+            <!-- Heading -->
+            <div class="rounded-l-full bg-brightRedSupLight md:bg-transparent">
+              <div class="flex items-center space-x-2">
+                <div
+                  class="px-4 py-2 text-white rounded-full md:py-1 bg-brightRed"
+                >
+                  04
+                </div>
+                <h3 class="text-base font-bold md:mb-4 md:hidden">
+                  The Digital Awareness Tab
+                </h3>
+              </div>
+            </div>
+
+            <div>
+              <h3 class="hidden mb-4 text-lg font-bold md:block">
+                The Digital Awareness Tab
+              </h3>
+              <p class="text-darkGrayishBlue">
+                In this page , we provided remarkable initiatives done by Emirati and Global Authorities, mentioning the 
+                recognizable efforts done by the Emirati Leadership to provide a safe cyber space . 
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </section>  <br> <br> 
+
+    
+    <!-- CTA Section -->
+    <section id="cta" class="bg-brightRed">
+      <!-- Flex Container -->
+      <div
+        class="container flex flex-col items-center justify-between px-6 py-24 mx-auto space-y-12 md:py-12 md:flex-row md:space-y-0"
+      >
+        <!-- Heading -->
+        <h2
+          class="text-5xl font-bold leading-tight text-center text-white md:text-4xl md:max-w-xl md:text-left"
+        >
+          Get assisted with our Digital Detective now 
+        </h2>
+        <!-- Button -->
+        <div>
+          <a
+            href="https://console.dialogflow.com/api-client/demo/embedded/133f9ed3-0887-4f41-91b4-c3950521a1fa?fbclid=IwAR1cPCwi8UBbEhYpxAmZ2QenHxs-J46wF2hKYOxKyGDug_HFYCwIdMF1lf0" target="_blank"
+            class="p-3 px-6 pt-2 text-brightRed bg-white rounded-full shadow-2xl baseline hover:bg-gray-900"
+            >Get Started</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-veryDarkBlue">
+      <!-- Flex Container -->
+      <div
+        class="container flex flex-col-reverse justify-between px-6 py-10 mx-auto space-y-8 md:flex-row md:space-y-0"
+      >
+        <!-- Logo and social links container -->
+        <div
+          class="flex flex-col-reverse items-center justify-between space-y-12 md:flex-col md:space-y-0 md:items-start"
+        >
+          <div class="mx-auto my-6 text-center text-white md:hidden">
+            Copyright &copy; 2022, All Rights Reserved
+          </div>
+          <!-- Logo -->
+          <div>
+            <img src="esebg.png" style="height:70px ;width: 250px;" class="h-8" alt="" />
+            <!--<img src="logo white.png" style="height:50 ;width: 2050;" class="h-8" alt="" />-->
+          </div>
+          <!-- Social Links Container -->
+          <div class="flex justify-center space-x-4">
+            <!-- Link 1 -->
+            <a href="#">
+              <img src=".." alt="" class="h-8" />
+            </a>
+            <!-- Link 2 -->
+            <a href="#">
+              <img src=".." alt="" class="h-8" />
+            </a>
+            <!-- Link 3 -->
+            <a href="#">
+              <img src="." alt="" class="h-8" />
+            </a>
+            <!-- Link 4 -->
+            <a href="#">
+              <img src=".." alt="" class="h-8" />
+            </a>
+            <!-- Link 5 -->
+            <a href="#">
+              <img src=".." alt="" class="h-8" />
+            </a>
+          </div>
+        </div>
+        <!-- List Container -->
+        <div class="flex justify-around space-x-32">
+          <div class="flex flex-col space-y-3 text-white">
+            <a href="index.html" class="hover:text-brightRed">Home</a>
+            <a href="about.html" class="hover:text-brightRed">About Us</a>
+            <a href="reach.html" class="hover:text-brightRed">Reach Out</a>
+            <a href="awareness.html" class="hover:text-brightRed">Awareness</a>
+          </div>
+          <div class="flex flex-col space-y-3 text-white">
+            <a href="contact1.html" class="hover:text-brightRed">Contact</a>
+            <a href="ppts.html" class="hover:text-brightRed">IPR</a>
+            <a href="https://console.dialogflow.com/api-client/demo/embedded/133f9ed3-0887-4f41-91b4-c3950521a1fa?fbclid=IwAR1cPCwi8UBbEhYpxAmZ2QenHxs-J46wF2hKYOxKyGDug_HFYCwIdMF1lf0" target="_blank" class="hover:text-brightRed">Digital Detective</a>
+            <a href="Digital Detective Chatbot Manual.pdf" class="hover:text-brightRed">Digital Detective Guide</a>
+          </div>
+        </div>
+
+        
+          </form>
+          <div class="hidden text-white md:block">
+            Copyright &copy; 2022, All Rights Reserved
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
